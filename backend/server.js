@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }))
 app.set("proxy trusted",1)
 app.use(cookieParser())
 app.use(session({
-    secret: "hello",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
