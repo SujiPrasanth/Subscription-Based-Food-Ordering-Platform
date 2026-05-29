@@ -76,6 +76,8 @@ Experience the Live Application
 ### Frontend
 https://subscription-based-food-ordering-pl.vercel.app
 
+> Note: For the best experience, please use Microsoft Edge or enable third-party cookies in Chrome, as Chrome may block cross-site authentication cookies in deployed applications.
+
 ### Backend API
 https://subscription-based-food-ordering-platform.onrender.com
 
