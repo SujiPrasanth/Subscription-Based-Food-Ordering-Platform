@@ -27,7 +27,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }))
 
-app.set("proxy trusted", 1)
+app.set("trust proxy", 1)
 
 app.use(session({
     secret: process.env.SESSION_SECRET,
