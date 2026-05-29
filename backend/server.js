@@ -18,7 +18,7 @@ import Razorpay from "razorpay";
 
 const app = express()
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://subscription-based-food-ordering-pl.vercel.app",
     credentials: true
 }
 ))
