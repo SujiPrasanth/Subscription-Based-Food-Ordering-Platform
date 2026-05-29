@@ -66,7 +66,7 @@ The final amount is calculated dynamically in the backend before payment process
 ---
 ## Demo Video
 
-https://github.com/user-attachments/assets/624d97a4-edee-49ee-8a3e-d1d3c4df0da6
+https://github.com/user-attachments/assets/7d6ee13a-cfb6-4480-a737-e91af15ae049
 
 ---
 ## Live Project
