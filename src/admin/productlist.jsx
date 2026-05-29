@@ -13,7 +13,7 @@ function Productlist() {
         const fetchproducts = async () => {
             try {
                 setloading(true)
-                const res = await fetch("http://localhost:3001/api/product")
+                const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/product")
 
                 if (!res.ok) {
                     throw new Error("failed to Fetch products")
@@ -50,7 +50,7 @@ function Productlist() {
     const handledelete = async (id) => {
         if (window.confirm("Are you sure  want delete")) {
             try {
-                const res = await fetch(`http://localhost:3001/api/product/${id}`, {
+                const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/product/${id}`, {
                     method: "DELETE",
                 })
                 const data = await res.json()

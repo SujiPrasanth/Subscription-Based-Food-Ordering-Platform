@@ -75,7 +75,7 @@ function Products() {
         const datatosend = { ...formdata, price: numprice }
 
         if (id) {
-            res = await fetch(`http://localhost:3001/api/product/${id}`, {
+            res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/product/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-type": "application/json"
@@ -85,7 +85,7 @@ function Products() {
 
         } else {
 
-            res = await fetch("http://localhost:3001/api/product",
+            res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/product",
                 {
                     method: "POST",
                     headers: { "Content-type": "application/json" },
@@ -108,7 +108,7 @@ function Products() {
     useEffect(() => {
         if (id) {
             const fetchproducts = async () => {
-                const res = await fetch(`http://localhost:3001/api/product/${id}`)
+                const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/product/${id}`)
                 const data = await res.json()
 
                 setformdata(

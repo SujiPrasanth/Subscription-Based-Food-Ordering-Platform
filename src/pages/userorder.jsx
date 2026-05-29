@@ -7,7 +7,7 @@ function Userorder() {
     useEffect(() => {
 
         async function getuserorders() {
-            const res = await fetch(`http://localhost:3001/api/userorders`,{
+            const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/userorders`,{
                 credentials:"include"
             })
             const data = await res.json()

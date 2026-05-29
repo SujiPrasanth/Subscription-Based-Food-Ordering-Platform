@@ -9,7 +9,7 @@ function Signin() {
     const handlesubmit = async (e) => {
         e.preventDefault()
         try {
-            const res = await fetch("http://localhost:3001/api/signin",
+            const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/signin",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

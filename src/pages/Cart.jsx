@@ -13,7 +13,7 @@ function Cart() {
     useEffect(() => {
         const handlecart = async () => {
             try {
-                const res = await fetch(`http://localhost:3001/api/cartitems`,{
+                const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/cartitems`,{
                     credentials:"include"
                 })
                 const data = await res.json()
@@ -37,7 +37,7 @@ function Cart() {
     const removeitem = async (id) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/removeitem/${id}`, {
+            const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/removeitem/${id}`, {
                 method: "DELETE",
                 credentials:"include",
                 
@@ -75,7 +75,7 @@ function Cart() {
             )
         )
 
-        const res = await fetch("http://localhost:3001/api/updatequantity", {
+        const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/updatequantity", {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             credentials:"include",
@@ -114,7 +114,7 @@ function Cart() {
             )
         )
 
-        const res = await fetch("http://localhost:3001/api/updatequantity", {
+        const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/updatequantity", {
             method: "PATCH",
             credentials:"include",
             headers: { "Content-Type": "application/json" },
@@ -144,11 +144,11 @@ function Cart() {
                 return
             }
 
-            const resgetkey = await fetch('http://localhost:3001/api/getkey')
+            const resgetkey = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/getkey')
             const keydata = await resgetkey.json()
 
 
-            const res = await fetch('http://localhost:3001/api/processpayment', {
+            const res = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/processpayment', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials:"include",
@@ -177,7 +177,7 @@ function Cart() {
 
                 order_id: data.order.id,
 
-                callback_url: "http://localhost:3001/api/paymentverification",
+                callback_url: "https://subscription-based-food-ordering-platform.onrender.com/api/paymentverification",
 
                 prefill: {
                     name: orderdetails.name,

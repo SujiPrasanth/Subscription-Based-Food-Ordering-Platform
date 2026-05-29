@@ -112,7 +112,7 @@ function Plans() {
         }
         try {
 
-            const res = await fetch("http://localhost:3001/api/addtocart", {
+            const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/addtocart", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -136,7 +136,7 @@ function Plans() {
         try {
             console.log("fetched")
             const formateddate = date.toISOString().split("T")[0]
-            const res = await fetch(`http://localhost:3001/api/fetchfilterproducts?category=${category}&meal=${meal}&cuisine=${cuisine}&date=${formateddate}`)
+            const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/fetchfilterproducts?category=${category}&meal=${meal}&cuisine=${cuisine}&date=${formateddate}`)
             const data = await res.json()
             console.log(data)
             if (!res.ok) {

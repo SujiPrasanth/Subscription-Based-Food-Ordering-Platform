@@ -9,7 +9,7 @@ function Sidebar() {
 
     const handlelogout = async () => {
         
-        const res = await fetch('http://localhost:3001/api/handleadminlogout', {
+        const res = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/handleadminlogout', {
             method: "POST",
             credentials: "include"
         })

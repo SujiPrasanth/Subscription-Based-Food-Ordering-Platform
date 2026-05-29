@@ -11,7 +11,7 @@ function Navbar() {
     const linkclass = ({ isActive }) => isActive ? "text-orange-500" : "text-black font-medium hover:text-orange-500"
 
     const handlelogout = async () => {
-        const res = await fetch('http://localhost:3001/api/handlelogout', {
+        const res = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/handlelogout', {
             method: "POST",
             credentials: "include"
         })

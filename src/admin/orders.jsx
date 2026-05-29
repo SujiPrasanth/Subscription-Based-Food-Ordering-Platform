@@ -11,7 +11,7 @@ function Orders() {
 
             try {
 
-                const res = await fetch('http://localhost:3001/api/paymentdetails')
+                const res = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/paymentdetails')
 
                 const data = await res.json()
 
@@ -35,7 +35,7 @@ function Orders() {
     const updatestatus = async (id, deliverystatus) => {
         try {
 
-            const res = await fetch(`http://localhost:3001/api/updateorderstatus/${id}`, {
+            const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/updateorderstatus/${id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ deliverystatus })
@@ -65,7 +65,7 @@ function Orders() {
     const handledelete = async(id)=>{
         if(!window.confirm("Are You Sure Want delete this Order")) return
         try{
-            const res = await fetch(`http://localhost:3001/api/deleteorder/${id}`,{
+            const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/deleteorder/${id}`,{
                 method:"DELETE"
             })
             const data = await res.json()

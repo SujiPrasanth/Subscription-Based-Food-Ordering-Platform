@@ -15,7 +15,7 @@ function Overview() {
     })
     useEffect(() => {
         async function fetchdetails() {
-            const res = await fetch("http:///localhost:3001/api/dashboarddetails")
+            const res = await fetch("https://subscription-based-food-ordering-platform.onrender.com/api/dashboarddetails")
             const data = await res.json()
 
             if (!res.ok) {

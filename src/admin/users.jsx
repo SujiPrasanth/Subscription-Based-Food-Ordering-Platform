@@ -7,7 +7,7 @@ function Users() {
 
         async function fetchdetails() {
             try {
-                const res = await fetch('http://localhost:3001/api/userdetails')
+                const res = await fetch('https://subscription-based-food-ordering-platform.onrender.com/api/userdetails')
 
                 const data = await res.json()
                 if (!res.ok) {
@@ -31,7 +31,7 @@ function Users() {
 
     async function handledelete(id) {
         if (!window.confirm("Are you sure want to dete the User")) return
-        const res = await fetch(`http://localhost:3001/api/userdelete/${id}`, {
+        const res = await fetch(`https://subscription-based-food-ordering-platform.onrender.com/api/userdelete/${id}`, {
             method: "DELETE",
         })
 
