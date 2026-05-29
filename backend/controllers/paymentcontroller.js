@@ -70,7 +70,7 @@ export const paymentverification = async (req, res) => {
                 }
             )
 
-            return res.redirect(`https://subscription-based-food-ordering-pl.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`)
+            return res.redirect('/')
         } else {
 
             await Order.findOneAndUpdate({ razorpay_order_id }, { status: "Failed" })
