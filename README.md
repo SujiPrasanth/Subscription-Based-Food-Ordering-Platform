@@ -194,5 +194,6 @@ RAZORPAY_SECRET=your_secret
 ---
 
 # Author
+**Suji Prasanth**
 
-Suji Prasanth
+Full Stack Developer | MERN Stack Enthusiast
